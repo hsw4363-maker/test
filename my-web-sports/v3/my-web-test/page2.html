@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원 전용 페이지</title>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="page2.css">
+</head>
+
+<body>
+
+<div class="banner">
+  스포츠 라이브 & AI 커뮤니티
+</div>
+
+<nav>
+  <div class="logo">SPORTS LIVE</div>
+  <div>
+    <a href="index.html">홈</a>
+    <a href="live.html">라이브</a>
+    <a href="community.html">분석실</a>
+    <a href="ai.html">AI</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>회원 전용 페이지</h1>
+  <p class="welcome" id="welcome-msg">로딩 중...</p>
+
+  <h2>추천 경기</h2>
+  <div class="card-row">
+    <div class="card baseball-card">
+      <span>야구 경기</span>
+    </div>
+
+    <div class="card basketball-card">
+      <span>농구 경기</span>
+    </div>
+  </div>
+
+  <button class="logout-btn" onclick="logout()">로그아웃</button>
+</div>
+
+<!-- JS -->
+<script src="page2.js"></script>
+
+</body>
+</html>

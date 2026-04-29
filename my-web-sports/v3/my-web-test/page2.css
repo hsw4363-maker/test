@@ -1,0 +1,106 @@
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0b0b0f;
+  color:#fff;
+}
+
+.banner {
+  height:200px;
+  background: linear-gradient(90deg,#1a2a6c,#b21f1f,#fdbb2d);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  font-weight:bold;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 24px;
+  background:#111;
+}
+
+.logo {
+  color:#00ff9f;
+  font-weight:bold;
+}
+
+nav a {
+  color:#aaa;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+nav a:hover {
+  color:#fff;
+}
+
+.container {
+  padding:30px;
+}
+
+h1 {
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.welcome {
+  color:#ccc;
+  margin-bottom:20px;
+}
+
+.card-row {
+  display:flex;
+  gap:16px;
+}
+
+.card {
+  width:260px;
+  aspect-ratio:16/9;
+  border-radius:12px;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+  padding:12px;
+  font-weight:bold;
+  position:relative;
+  overflow:hidden;
+}
+
+.baseball-card {
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBou6AG3HOdB12SGmk6QyEZCNPJfy9Auerg&s");
+}
+
+.basketball-card {
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8kl5iJr5lNw-XLsY1chQBs0wox58QgaoSLw&s");
+}
+
+.card::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.card span {
+  position:relative;
+  z-index:1;
+}
+
+.logout-btn {
+  margin-top:30px;
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  background:#00ff9f;
+  color:#000;
+  cursor:pointer;
+}
+
+.logout-btn:hover {
+  opacity:0.8;
+}

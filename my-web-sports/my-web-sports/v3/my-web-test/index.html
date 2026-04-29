@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>커뮤니티 홈</title>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
+
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="banner">
+  스포츠 라이브 & AI 커뮤니티
+</div>
+
+<div class="cta">
+  <button class="btn btn-solid" onclick="goPage2()">
+    지금 바로 시작하기 →
+  </button>
+</div>
+
+<nav>
+  <div class="logo">SPORTS LIVE</div>
+
+  <div class="nav-links">
+    <a href="index.html">홈</a>
+    <a href="page2.html">라이브</a>
+    <a href="#">분석실</a>
+    <a href="#">AI</a>
+  </div>
+
+  <div class="auth">
+    <div id="auth-guest">
+      <a href="login.html" class="btn btn-outline">로그인</a>
+      <a href="signup.html" class="btn btn-solid">회원가입</a>
+    </div>
+
+    <div id="auth-user">
+      <span id="user-email"></span>
+      <button class="btn btn-outline" onclick="logout()">로그아웃</button>
+    </div>
+  </div>
+</nav>
+
+<div class="section">
+  <h2>LIVE NOW</h2>
+  <div class="card-row">
+    <div class="card baseball-card" onclick="goPage2()">
+      <span>야구 경기</span>
+    </div>
+
+    <div class="card basketball-card" onclick="goPage2()">
+      <span>농구 경기</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>회원 전용 기능</h2>
+  <div class="grid">
+    <div class="grid-item" onclick="goPage2()">🔥 실시간 경기 보기</div>
+    <div class="grid-item" onclick="goPage2()">🤖 AI 분석 보기</div>
+    <div class="grid-item" onclick="goPage2()">📊 데이터 기반 분석실</div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
